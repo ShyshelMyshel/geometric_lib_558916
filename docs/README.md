@@ -30,5 +30,6 @@
 Пример вызова: `perimeter(5, 12, 13)`
 
 ## История изменений
-- `d078c8d` L-03: Docs added
+- `0504138` Добавила в функциях блоки комментариев с описаниями самих функций и примерами их  вызова
+- `d078c8d` (origin/main, origin/HEAD, main) L-03: Docs added
 - `8ba9aeb` L-03: Circle and square added
