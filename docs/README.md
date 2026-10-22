@@ -3,7 +3,30 @@
 ## Общее описание
 Библиотека на Python для вычисления площади и периметра геометрических фигур: круга, квадрата, прямоугольника и треугольника.
 
+## Навигация
+
+- [Общее описание](#общее-описание)
+- [Функции](#функции)
+  - [Круг](#circlearear)
+    - [circle.area(r)](#circlearear)
+    - [circle.perimeter(r)](#circleperimeterr)
+  - [Квадрат](#squareareaa)
+    - [square.area(a)](#squareareaa)
+    - [square.perimeter(a)](#squareperimetera)
+  - [Прямоугольник](#rectangleareaa-b)
+    - [rectangle.area(a, b)](#rectangleareaa-b)
+    - [rectangle.perimeter(a, b)](#rectangleperimetera-b)
+  - [Треугольник](#triangleareaa-h)
+    - [triangle.area(a, h)](#triangleareaa-h)
+    - [triangle.perimeter(a, b, c)](#triangleperimetera-b-c)
+- [История изменений](#история-изменений)
+
+
+
+---
+
 ## Функции
+
 
 ### circle.area(r)
 Принимает радиус `r`, возвращает площадь круга радиуса `r`.
