@@ -1,33 +1,26 @@
-"""Unit-тесты для модуля rectangle.py (площадь и периметр прямоугольника).
 
-Формулы: S = a * b,  P = 2 * (a + b)
-Код самого модуля rectangle.py не изменяется.
-"""
 import unittest
 
 import rectangle
 
 
 class RectangleAreaTestCase(unittest.TestCase):
-    """rectangle.area(a, b) -- площадь прямоугольника."""
 
-    def test_different_sides(self):
-        # Пример из справочника: area(3, 5) = 15
+
+    def test_different_sides(self):     
         self.assertEqual(rectangle.area(3, 5), 15)
 
     def test_zero_mul(self):
-        # Пример из методички к лабе 4
+
         self.assertEqual(rectangle.area(10, 0), 0)
 
     def test_square_mul(self):
-        # Пример из методички к лабе 4: прямоугольник 10x10
         self.assertEqual(rectangle.area(10, 10), 100)
 
     def test_float_sides(self):
         self.assertAlmostEqual(rectangle.area(2.5, 4), 10.0)
 
     def test_commutative(self):
-        # Площадь не зависит от порядка сторон
         self.assertEqual(rectangle.area(3, 5), rectangle.area(5, 3))
 
 
@@ -35,7 +28,6 @@ class RectanglePerimeterTestCase(unittest.TestCase):
     """rectangle.perimeter(a, b) -- периметр прямоугольника."""
 
     def test_different_sides(self):
-        # Пример из справочника: perimeter(3, 5) = 16
         self.assertEqual(rectangle.perimeter(3, 5), 16)
 
     def test_zero_sides(self):
@@ -54,11 +46,6 @@ class RectanglePerimeterTestCase(unittest.TestCase):
 
 
 class RectangleInvalidInputTestCase(unittest.TestCase):
-    """Недопустимые данные: стороны не могут быть отрицательными.
-
-    Если функции не проверяют вход, тесты упадут -- это результат
-    тестирования, его нужно описать в отчёте.
-    """
 
     def test_area_negative_side(self):
         with self.assertRaises(ValueError):

@@ -1,15 +1,10 @@
-"""Unit-тесты для модуля square.py (площадь и периметр квадрата).
 
-Формулы: S = a^2,  P = 4 * a
-Код самого модуля square.py не изменяется.
-"""
 import unittest
 
 import square
 
 
 class SquareAreaTestCase(unittest.TestCase):
-    """square.area(a) -- площадь квадрата."""
 
     def test_integer_side(self):
         # Пример из справочника: area(3) = 9
@@ -29,10 +24,8 @@ class SquareAreaTestCase(unittest.TestCase):
 
 
 class SquarePerimeterTestCase(unittest.TestCase):
-    """square.perimeter(a) -- периметр квадрата."""
 
     def test_integer_side(self):
-        # Пример из справочника: perimeter(4) = 16
         self.assertEqual(square.perimeter(4), 16)
 
     def test_unit_side(self):
@@ -49,11 +42,6 @@ class SquarePerimeterTestCase(unittest.TestCase):
 
 
 class SquareInvalidInputTestCase(unittest.TestCase):
-    """Недопустимые данные: сторона не может быть отрицательной.
-
-    Если функции не проверяют вход, тесты упадут -- это результат
-    тестирования, его нужно описать в отчёте.
-    """
 
     def test_area_negative_side(self):
         with self.assertRaises(ValueError):
